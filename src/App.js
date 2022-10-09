@@ -1,52 +1,79 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import axios from 'axios'
-import Coin from './Coin';
+import React, { lazy, Suspense, useEffect, useState } from "react";
+// import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/nav-bar";
+import { Link } from "react-router-dom";
+import initFontAwesome from "./components/fontAwesome";
+
+import styled, { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyles } from "./components/themes";
+
+const Home = lazy(() => import("./pages/home"));
+const Defi = lazy(() => import("./pages/defi"));
+const Idolaunchpad = lazy(() => import("./pages/idolaunchpad"));
+const Rugchecker = lazy(() => import("./pages/rugchecker"));
+const Faq = lazy(() => import("./pages/faq"));
+const StyledApp = styled.div`
+  color: ${(props) => props.theme.fontColor};
+`;
+initFontAwesome();
 
 
 function App() {
-  const [coins,setCoins] = useState([])
-  const [search,setSearch] = useState('')
-  useEffect(() => {
-    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false')
-    .then(res=>{
-       setCoins(res.data)
-       console.log(res.data)
-    }).catch(error=>console.log(error))
-  }, [])
-  const handleChange = e =>{
-    setSearch(e.target.value)
-  }
-  const filteredCoins = coins.filter(coin=>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-    )
+  const [theme, setTheme] = useState("light");
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
   return (
-    <div className="coin-app">
-      <div className="coin-search">
-        {/* <h1 className="coin-text">Search your desired coin</h1> */}
-        <form action="">
-          <input type="text" className="coin-input" placeholder="Provide the coin name" onChange={handleChange}/>
+    <>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <GlobalStyles />
+        <StyledApp>
+          <main className="main">
+            <Suspense
+              fallback={
+                <div className="preloader">
+                  <div className="wrapper">
+                    <div className="blobs">
+                      <div className="blob-center"></div>
+                      <div className="blob"></div>
+                      <div className="blob"></div>
+                      <div className="blob"></div>
+                      <div className="blob"></div>
+                      <div className="blob"></div>
+                      <div className="blob"></div>
+                    </div>
+                    <div>
+                      <div className="loader-canvas canvas-left"></div>
+                      <div className="loader-canvas canvas-right"></div>
+                    </div>
+                  </div>
+                </div>
+              }
+            >
+              <Router>
+                <NavBar />
 
-        </form>
-
-      </div>
-      {filteredCoins.map(coin=>{
-        return(
-          <Coin 
-          key={coin.id} 
-          name={coin.name} 
-          image={coin.image} 
-          symbol={coin.symbol}
-          marketcap={coin.market_cap}
-          price={coin.current_price}
-          pricechange={coin.price_change_percentage_24h}
-//           volume={coin.total_volume}
-          />
-        );
-      })}
-
-
-    </div>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/defi" element={<Defi />} />
+                  <Route path="/idolaunchpad" element={<Idolaunchpad />} />
+                  {/* <Route path="/rugchecker" element={<Rugchecker />} /> */}
+                  <Route path="/faq" element={<Faq />}></Route>
+                  <Route path="/buy" element={<Idolaunchpad />} />
+                </Routes>
+              </Router>
+            </Suspense>
+            {/* <button
+              className="btn btn-size--sm btn-hover--splash"
+              style={{ backgroundColor: "gold",  marginRight : 0, marginTop : 0 }}
+              onClick={() => themeToggler()}
+            >Change theme
+            </button> */}
+          </main>
+        </StyledApp>
+      </ThemeProvider>
+    </>
   );
 }
 
