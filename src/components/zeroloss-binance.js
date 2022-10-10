@@ -1,13 +1,11 @@
 import React from "react";
 
-
 const ZerolossBinance = () => {
+  function importAll(r) {
+    r.keys().forEach(r);
+  }
 
-function importAll(r) {
-  r.keys().forEach(r);
-}
-
- const images = importAll(require.context("./", true, /\.js$/));
+  const images = importAll(require.context("./", true, /\.js$/));
 
   return (
     <>
@@ -23,14 +21,15 @@ function importAll(r) {
                 className="mb-3 font-size--20 font-w--100"
                 style={{ color: "white", fontWeight: "light" }}
               >
-                The Binance Smart Chain is a great tool for investors to get
-                lower transaction fees and faster speeds. However, constant rugs
-                and exit scams are currently hurting the progress of DeFi on
-                Binance Smart Chain. ZEROLOSS was created with a clear focus
-                centered on solving these problems and bring a sense of
-                security, to Binance Smart Chain. We're building a platform that
-                will ensure the safety of all funds, for both investors and
-                projects.
+                The Binance Smart Chain as a scaling solution to ethereum is a
+                great tool for crypto users and investors to get lower
+                transaction fees and faster speeds. However, the incessant exit
+                scams and rug pools are currently deterring the progressive
+                growth of DeFi on Binance Smart Chain. ZEROLOSS was created with
+                a clear focus centered on solving these problems and bring a
+                sense of security, to Binance Smart Chain with ZEROLOSS rug
+                checker. We're building a platform that will ensure the safety
+                of all user funds, for both projects and investors.
               </h2>
 
               <p
@@ -41,22 +40,26 @@ function importAll(r) {
                   fontSize: "20px",
                 }}
               >
-                TRUSTED dAPPs on BINANCE SMART CHAIN
+                Trusted Partners
               </p>
 
               <div className="icon-fill--wide text-center d-lg-flex justify-content-lg-center flex-wrap reveal">
                 <a
                   className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://poocoin.app"
+                  href="https://dodoex.io/"
                   target="_blank"
                   style={{ border: "4px solid white" }}
                 >
-                  <img src={"images/poocoin1.jpg"} alt="" />
+                  <img
+                    src={"images/dodo-logo.png"}
+                    alt="partner"
+                    width={"50px"}
+                  />
                   <span
                     className="t-icon__brand-name h5-font font-w--500 text-color--700"
                     style={{ color: "white" }}
                   >
-                    Poocoin Chart
+                    Dodoex
                   </span>
                 </a>
 
@@ -75,22 +78,22 @@ function importAll(r) {
 
                 <a
                   className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://apeboard.finance"
+                  href="https://scamsniper.net/"
                   target="_blank"
                   style={{ backgroundColor: "gold" }}
                 >
-                  <img src={"images/Apeboard.jpg"} alt="" />
+                  <img src={"images/scamsniper.png"} alt="" width={"50px"} />
                   <span
                     className="t-icon__brand-name h5-font font-w--500"
                     style={{ color: "black" }}
                   >
-                    Apeboard Portfolio Check
+                    ScamSniper
                   </span>
                 </a>
 
                 <a
                   className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://bscscan.com/token/0xc1ed8d529f5fe85837349f7dd57715a3904a5f21"
+                  href="https://www.bnbchain.world/en"
                   target="_blank"
                   style={{ border: "4px solid white" }}
                 >
@@ -171,8 +174,9 @@ function importAll(r) {
                 }}
               >
                 <span className="btn__text d-flex justify-content-between">
-                  How add to wallet?
-                  <i className="icon icon-arrow-right font-size--20"></i>
+                  How to add to wallet? GO! <i class="icon fa-arrowight"></i>
+                  <i class="fas fa-arrow-right"></i>
+                  {/* <i className="icon icon-arrow-right font-size--20"></i> */}
                 </span>
               </button>
             </div>
@@ -184,7 +188,7 @@ function importAll(r) {
           <img
             src={"images/layout/oval.png"}
             alt="wave"
-            className="background-image-holder"
+            className="background-image-holder svg w-100"
           />
         </div>
 
@@ -222,21 +226,19 @@ function importAll(r) {
               <div className="col-12 col-lg-7 col-xl-7 d-flex flex-wrap flex-column flex-sm-row align-items-center justify-content-center align-items-lg-start justify-content-lg-start justify-content-xl-between mb-4 mb-lg-0 reveal">
                 <div className="border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-xl-0 mb-md-4 p-3 jsElementFocus">
                   <span>
-                    <a href="https://dodoex.io/" target="_blank">
-                      <img
-                        src={
-                          "https://dodoex.io/_next/image?url=%2Fassets%2Fimages%2Fheader-logo.png&w=1920&q=75"
-                        }
-                        alt="partner"
-                      />
+                    <a
+                      href="https://exchange.pancakeswap.finance"
+                      target="_blank"
+                    >
+                      <img src={"images/pancake.png"} alt="partner" />
                     </a>
                   </span>
                 </div>
 
                 <div className="border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-sm-1 mx-xl-0 mb-md-4 p-3 jsElementFocus">
                   <span>
-                    <a href="https://www.bakeryswap.org/" target="_blank">
-                      <img src={"images/bakeryswap.png"} alt="partner" />
+                    <a href="https://dodoex.io/" target="_blank">
+                      <img src={"images/dodo-logo.png"} alt="partner" />
                     </a>
                   </span>
                 </div>
@@ -265,7 +267,7 @@ function importAll(r) {
                       and more exchanges
                     </p>
                     <button
-                      href="https://exchange.pancakeswap.finance/#/swap?outputCurrency="
+                      href="https://app.zeroloss.org"
                       className="btn btn-size--sm btn-border btn-hover--splash color--green"
                     >
                       <span className="btn__text font-w--700">Buy ZLT</span>
@@ -279,6 +281,6 @@ function importAll(r) {
       </section>
     </>
   );
-}
+};
 
 export default ZerolossBinance;

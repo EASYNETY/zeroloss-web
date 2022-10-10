@@ -14,7 +14,18 @@ import InfoChart from '../components/infoChart';
 function Home() {
 
   return <>
-  <main className="main">
+       <body className="theme-royal-blue" data-spy="scroll" data-target="#navbar-nav" data-animation="true"
+      data-appearance="light">
+
+
+<main className="main">
+
+
+
+    {/* <section className="space h-min-100vh d-flex align-items-center" style={{backgroundColor: "black"}}>
+        <div className="svg-shape--top w-100"> */}
+            
+        {/* </div> */}
       <NavBar />
       <Header />
       <WhyChooseUs />
@@ -22,8 +33,9 @@ function Home() {
       <ZerolossBinance />
       <Roadmap />
       <Footer />
-
+{/* </section> */}
     </main>
+    </body>
     </>
   }
 

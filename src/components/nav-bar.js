@@ -60,7 +60,7 @@ function NavBar(props) {
             </button>
 
             <nav>
-              <ul className="navbar-nav" id="navbar-nav">
+              <ul className="nav navbar-nav">
                 <li className="nav-item active">
                   <Link
                     className="nav-link"
@@ -96,8 +96,7 @@ function NavBar(props) {
                 <li className="nav-item ">
                   <a
                     className="nav-link"
-                    href="#zeroloss"
-                    // href="https://front.herokuapp.com/rugchecker"
+                    href="https://front.herokuapp.com/rugchecker"
                     style={{ color: "white" }}
                   >
                     Rug Checker
