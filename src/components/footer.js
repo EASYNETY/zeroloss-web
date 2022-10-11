@@ -1,5 +1,9 @@
 import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faReddit } from "@fortawesome/free-solid-svg-icons";
+
 
 function Footer(props) {
   return (
@@ -49,16 +53,43 @@ function Footer(props) {
                       target="_blank"
                       className="color--white"
                     >
-                      <i className="fab fa-twitter"></i>
+                      <i
+                        className="fa fa-twitter"
+                        style={{ fontZize: "36px" }}
+                      ></i>
+
+                      {/* <i className="fab fa-twitter"></i> */}
                     </a>
                   </li>
                   <li className="p-2">
                     <a
-                      href="https://www.reddit.com/r/thezerolosscommunity/"
+                      href="https://discord.gg/brUDkCb72M"
                       target="_blank"
                       className="color--white"
                     >
-                      <i className="fab fa-reddit"></i>
+                      <FontAwesomeIcon icon="fa-brands fa-discord" />
+                    </a>
+                  </li>
+                  <li className="p-2">
+                    <a
+                      href="https://www.linkedin.com/company/zerolossorg"
+                      target="_blank"
+                      className="color--white"
+                    >
+                      <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                    </a>
+                  </li>
+                  <li className="p-2">
+                    <a
+                      href="https://zeroloss.medium.com/"
+                      target="_blank"
+                      className="color--white"
+                    >
+                      <FontAwesomeIcon icon="fa-brands fa-medium" />
+                      <i
+                        className="fa fa-discord"
+                        style={{ fontZize: "36px" }}
+                      ></i>
                     </a>
                   </li>
                 </ul>

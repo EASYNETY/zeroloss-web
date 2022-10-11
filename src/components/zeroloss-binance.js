@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const ZerolossBinance = () => {
   function importAll(r) {
@@ -17,21 +19,6 @@ const ZerolossBinance = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-10 mx-auto text-center reveal">
-              <h2
-                className="mb-3 font-size--20 font-w--100"
-                style={{ color: "white", fontWeight: "light" }}
-              >
-                The Binance Smart Chain as a scaling solution to ethereum is a
-                great tool for crypto users and investors to get lower
-                transaction fees and faster speeds. However, the incessant exit
-                scams and rug pools are currently deterring the progressive
-                growth of DeFi on Binance Smart Chain. ZEROLOSS was created with
-                a clear focus centered on solving these problems and bring a
-                sense of security, to Binance Smart Chain with ZEROLOSS rug
-                checker. We're building a platform that will ensure the safety
-                of all user funds, for both projects and investors.
-              </h2>
-
               <p
                 className="mb-1 pb-2 px-lg-6"
                 style={{
@@ -40,7 +27,7 @@ const ZerolossBinance = () => {
                   fontSize: "20px",
                 }}
               >
-                Trusted Partners
+                Buy, Sell and Exchange ZLT
               </p>
 
               <div className="icon-fill--wide text-center d-lg-flex justify-content-lg-center flex-wrap reveal">
@@ -49,11 +36,13 @@ const ZerolossBinance = () => {
                   href="https://dodoex.io/"
                   target="_blank"
                   style={{ border: "4px solid white" }}
+                  rel="noreferrer"
                 >
                   <img
                     src={"images/dodo-logo.png"}
                     alt="partner"
-                    width={"50px"}
+                    width={"70px"}
+                    height={"40px"}
                   />
                   <span
                     className="t-icon__brand-name h5-font font-w--500 text-color--700"
@@ -65,48 +54,59 @@ const ZerolossBinance = () => {
 
                 <a
                   className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://cbridge.celer.network/"
+                  href="https://www.dextools.io/app/bnb/pair-explorer/0xcdee9978ac7549c755b58849ed7e1648efac6ca7"
                   target="_blank"
                   style={{ backgroundColor: "gold" }}
+                  rel="noreferrer"
                 >
-                  <img src={"images/cBridge1.jpg"} alt="" />
-                  <span
-                    className="t-icon__brand-name h5-font font-w--500"
-                    style={{ color: "black" }}
-                  ></span>
-                </a>
-
-                <a
-                  className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://scamsniper.net/"
-                  target="_blank"
-                  style={{ backgroundColor: "gold" }}
-                >
-                  <img src={"images/scamsniper.png"} alt="" width={"50px"} />
+                  <img
+                    src={"images/devtools.png"}
+                    alt="partner"
+                    width={"70px"}
+                    height={"40px"}
+                  />
                   <span
                     className="t-icon__brand-name h5-font font-w--500"
                     style={{ color: "black" }}
                   >
-                    ScamSniper
+                    DexTools
                   </span>
                 </a>
-
-                <a
-                  className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
-                  href="https://www.bnbchain.world/en"
-                  target="_blank"
-                  style={{ border: "4px solid white" }}
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-lg-10 mx-auto text-center reveal">
+                <p
+                  className="mb-1 pb-2 px-lg-6"
+                  style={{
+                    color: "white",
+                    fontWeight: "bolder",
+                    fontSize: "20px",
+                  }}
                 >
-                  <span className="t-icon__brand-icon h4-font color--primary">
-                    <i className="cf cf-bnb color--yellow"></i>
-                  </span>
-                  <span
-                    className="t-icon__brand-name h5-font font-w--500 text-color--700"
-                    style={{ color: "white" }}
+                  Earn with Zeroloss, Stake ZLT{" "}
+                </p>
+                <div className="icon-fill--wide text-center d-lg-flex justify-content-lg-center flex-wrap reveal">
+                  <a
+                    className="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary"
+                    href="https://scamsniper.net/"
+                    target="_blank"
+                    style={{ backgroundColor: "gold" }}
+                    rel="noreferrer"
                   >
-                    Binance Smart Chain
-                  </span>
-                </a>
+                    <img src={"images/scamsniper.png"} alt="" width={"50px"} />
+                    <span
+                      className="t-icon__brand-name h5-font font-w--500"
+                      style={{ color: "black" }}
+                    >
+                      ScamSniper
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -131,7 +131,11 @@ const ZerolossBinance = () => {
             <div className="col-12 text-center">
               <div className="border--bottom pb-1 reveal">
                 <span className="m-2 m-lg-4">
-                  <a href="https://www.trustwallet.com/" target="_blank">
+                  <a
+                    href="https://www.trustwallet.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src={"images/trustwallet.png"}
                       height="50"
@@ -140,27 +144,21 @@ const ZerolossBinance = () => {
                   </a>
                 </span>
                 <span className="m-2 m-lg-4">
-                  <a href="https://metamask.io/" target="_blank">
+                  <a
+                    href="https://metamask.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img src={"images/metamask.png"} height="50" alt="logo" />
                   </a>
                 </span>
+
                 <span className="m-2 m-lg-4">
-                  <a href="https://safepal.io/" target="_blank">
-                    <img src={"images/safe.png"} height="50" alt="logo" />
-                  </a>
-                </span>
-                <span className="m-2 m-lg-4">
-                  <a href="https://token.im/" target="_blank">
-                    <img src={"images/imtoken.png"} height="50" alt="logo" />
-                  </a>
-                </span>
-                <span className="m-2 m-lg-4">
-                  <a href="https://www.coinomi.com/" target="_blank">
-                    <img src={"images/coinomi.png"} height="50" alt="logo" />
-                  </a>
-                </span>
-                <span className="m-2 m-lg-4">
-                  <a href="https://www.ledger.com/" target="_blank">
+                  <a
+                    href="https://www.ledger.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img src={"images/ledger.png"} height="50" alt="logo" />
                   </a>
                 </span>
@@ -174,7 +172,8 @@ const ZerolossBinance = () => {
                 }}
               >
                 <span className="btn__text d-flex justify-content-between">
-                  How to add to wallet? GO! <i class="icon fa-arrowight"></i>
+                  How to add to wallet? GO! 
+                  <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
                   <i class="fas fa-arrow-right"></i>
                   {/* <i className="icon icon-arrow-right font-size--20"></i> */}
                 </span>
@@ -212,11 +211,11 @@ const ZerolossBinance = () => {
                 className="mb-2 h3-font font-w--700"
                 style={{ color: "white" }}
               >
-                Top BEP20 DEX Platforms
+                AS SEEN ON TOP INDUSTRY BRANDS
               </h2>
               <p className="opacity--80">
                 <b />
-                Best DEXs for token exchange on BSC
+                Zeroloss partners with worlds leading companys
               </p>
             </div>
 
@@ -229,6 +228,7 @@ const ZerolossBinance = () => {
                     <a
                       href="https://exchange.pancakeswap.finance"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={"images/pancake.png"} alt="partner" />
                     </a>
@@ -237,7 +237,11 @@ const ZerolossBinance = () => {
 
                 <div className="border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-sm-1 mx-xl-0 mb-md-4 p-3 jsElementFocus">
                   <span>
-                    <a href="https://dodoex.io/" target="_blank">
+                    <a
+                      href="https://dodoex.io/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img src={"images/dodo-logo.png"} alt="partner" />
                     </a>
                   </span>
@@ -245,19 +249,27 @@ const ZerolossBinance = () => {
 
                 <div className=" border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-xl-0 mb-md-4 p-3 jsElementFocus">
                   <span>
-                    <a href="https://apeswap.finance/" target="_blank">
-                      <img src={"images/apeswap.png"} alt="partner" />
+                    <a
+                      href="https://unicrypt.network/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={"images/unicript.png"} alt="partner" />
                     </a>
                   </span>
                 </div>
 
-                <div className="border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-xl-0 mb-md-4 p-3 jsElementFocus">
+                {/* <div className="border--none bg-color--transparent card-hover--bg--alt-shadow mb-1 mx-sm-2 mx-xl-0 mb-md-4 p-3 jsElementFocus">
                   <span>
-                    <a href="https://home.babyswap.finance/" target="_blank">
+                    <a
+                      href="https://home.babyswap.finance/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img src={"images/babyswaps.png"} alt="partner" />
                     </a>
                   </span>
-                </div>
+                </div> */}
               </div>
 
               <div className="col-12 col-md-10 col-lg-5 col-xl-4 mx-auto mx-lg-0 pb-10">
@@ -267,7 +279,7 @@ const ZerolossBinance = () => {
                       and more exchanges
                     </p>
                     <button
-                      href="https://app.zeroloss.org"
+                      href="https://www.dextools.io/app/bnb/pair-explorer/0xcdee9978ac7549c755b58849ed7e1648efac6ca7"
                       className="btn btn-size--sm btn-border btn-hover--splash color--green"
                     >
                       <span className="btn__text font-w--700">Buy ZLT</span>

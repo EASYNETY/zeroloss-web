@@ -3,6 +3,13 @@ import Typewriter from "typewriter-effect";
 import { useSpring } from "react-spring";
 import { Animatedcontainer, calc, trans } from "./animated-countainer";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faKey,
+  faHandshake,
+  faShieldAlt,
+  faMoneyCheck,
+} from "@fortawesome/free-solid-svg-icons";
 
 const header = {
   fontFamily: "sans-serif",
@@ -97,7 +104,7 @@ function Header() {
             >
               <div className="single-item m-1 m-sm-4">
                 <span className="h2-font">
-                  <i class="fas fa-handshake"></i>
+                  <FontAwesomeIcon icon={faHandshake} />
                 </span>
                 <p className="h4-font">RUG-PROOF AND EQUITABLE</p>
                 <p className="h8-font">
@@ -109,6 +116,7 @@ function Header() {
 
               <div className="single-item m-1 m-sm-4">
                 <span className="h2-font">
+                  <FontAwesomeIcon icon={faShieldAlt} />
                   <i className="fas fa-shield-alt"></i>
                 </span>
                 <p className="h4-font">LOCKED LIQUIDITY</p>
@@ -121,7 +129,7 @@ function Header() {
 
               <div className="single-item m-1 m-sm-4">
                 <span className="h2-font">
-                  <i className="fas fa-key"></i>
+                  <FontAwesomeIcon icon={faKey} />
                 </span>
                 <p className="h4-font">INTEROPERABLE</p>
                 <p className="h8-font">
@@ -133,7 +141,7 @@ function Header() {
 
               <div className="single-item m-1 m-sm-4">
                 <span className="h2-font">
-                  <i className="fas fa-money-check"></i>
+                  <FontAwesomeIcon icon={faMoneyCheck} />
                 </span>
                 <p className="h4-font">ZEROLOSSPAD</p>
                 <p className="h8-font">
