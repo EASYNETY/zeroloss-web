@@ -1,31 +1,30 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom"
-import styled, { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme, GlobalStyles } from "../components/themes";
+import React  from "react";
+import { NavLink } from "react-router-dom";
+// import styled, { ThemeProvider } from "styled-components";
+// import { lightTheme, darkTheme, GlobalStyles } from "../components/themes";
+// import {BrowserRouter,Switch,Route,NavLink} from "ReactRouterDOM";
 
 
 
-function NavBar(props) {
-  const [theme, setTheme] = useState("light");
-  const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  };
+function NavBar() {
+  const [click, setClick] = React.useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
 
   return (
-    <div
-      className="theme-royal-blue"
-      data-spy="scroll"
-      data-target="#navbar-nav"
-      data-animation="true"
-      data-appearance="light"
-    >
-      <button onClick={() => themeToggler()}>Change Theme</button>
-      <header
-        className="navbar navbar-sticky navbar-expand-lg navbar-dark"
-        style={{ backgroundColor: "black", position: "fixed" }}
-      >
-        <div className="container position-relative">
-          <Link className="navbar-brand" to="/">
+    <div>
+      <div
+        className={
+          click
+            ? "main-container"
+            : ""
+        }
+        onClick={() => Close()}
+      />
+      <nav className="navbar" onClick={(e) => e.stopPropagation()}>
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
             <img
               className="navbar-brand__regular"
               style={{ height: "120px" }}
@@ -38,111 +37,91 @@ function NavBar(props) {
               style={{ height: "120px" }}
               alt="sticky brand-logo"
             />
-          </Link>
-
-          <button
-            className="navbar-toggler d-lg-none"
-            type="button"
-            data-toggle="navbarToggler"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="navbar-inner ml-lg-auto pl-lg-2 pl-xl-6">
-            <button
-              className="navbar-toggler d-lg-none"
-              type="button"
-              data-toggle="navbarToggler"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <nav>
-              <ul className="nav navbar-nav">
-                <li className="nav-item active">
-                  <Link
-                    className="nav-link"
-                    style={{ color: "white" }}
-                    activeClassName="is-active"
-                    to="/"
-                    exact
-                  >
-                    Home
-                  </Link>
-                </li>
-
-                <li className="nav-item ">
-                  <Link
-                    className="nav-link"
-                    to="/defi"
-                    style={{ color: "white" }}
-                  >
-                    Launch App
-                  </Link>
-                </li>
-
-                <li className="nav-item ">
-                  <Link
-                    className="nav-link"
-                    to="/idolaunchpad"
-                    style={{ color: "white" }}
-                  >
-                    ZerolossPad
-                  </Link>
-                </li>
-
-                <li className="nav-item ">
-                  <a
-                    className="nav-link"
-                    href="https://front.herokuapp.com/rugchecker"
-                    style={{ color: "white" }}
-                  >
-                    Rug Checker
-                  </a>
-                </li>
-
-                <li className="nav-item ">
-                  <a
-                    className="nav-link"
-                    href="https://drive.google.com/file/d/1KvACbgj-2-ZrsM8v_UHj7BuV__OjoewV/view?usp=drivesdk"
-                    style={{ color: "white" }}
-                  >
-                    LightPaper
-                  </a>
-                </li>
-
-                <li className="nav-item ">
-                  <Link
-                    className="nav-link"
-                    to="/faq"
-                    style={{ color: "white" }}
-                  >
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/idolaunchpad"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Launch App
+              </NavLink>
+            </li>
+            {/* <li className="nav-item">
+              <NavLink
+                exact
+                to="/zerolosspad"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                ZerolossPad
+              </NavLink>
+            </li> */}
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://scamsniper.net"
+                style={{ color: "white" }}
+              >
+                Rug Checker
+              </a>
+            </li>
+            <li className="nav-item ">
+              <a
+                className="nav-link"
+                href="https://drive.google.com/file/d/1KvACbgj-2-ZrsM8v_UHj7BuV__OjoewV/view?usp=drivesdk"
+                style={{ color: "white" }}
+              >
+                LightPaper
+              </a>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/faq"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                FAQ
+              </NavLink>
+            </li>
+          </ul>
           <div className="mr-5 mr-lg-0 ml-lg-2">
-            <Link
-              to="/defi"
+            <a
+              href="https://app.dodoex.io/?outputCurrency=0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2&from=ZLT&to=BUSD"
               className="btn btn-size--sm btn-border btn-hover--danger color--white"
             >
               <span className="btn__text font-w--500">Buy</span>
-            </Link>
-            <Link
+            </a>
+            <NavLink
               to="/defi"
-              target="_blank"
               className="btn btn-size--sm btn-hover--splash"
               style={{ backgroundColor: "gold" }}
             >
               <span className="btn__text">DeFi</span>
-            </Link>
+            </NavLink>
+          </div>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
           </div>
         </div>
-      </header>
+      </nav>
     </div>
   );
 }
