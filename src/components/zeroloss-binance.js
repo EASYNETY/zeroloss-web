@@ -78,6 +78,17 @@ const ZerolossBinance = () => {
           <br />
           <br />
           <div className="container">
+            <a
+              href="0x05d8762946fa7620b263e1e77003927addf5f7e6"
+              className="mb-1 pb-2 px-lg-6"
+              style={{
+                color: "white",
+                fontWeight: "bolder",
+                fontSize: "20px",
+              }}
+            >
+              CONTRACT ADDRESS
+            </a>
             <div className="row">
               <div className="col-12 col-lg-10 mx-auto text-center reveal">
                 <p
@@ -171,12 +182,14 @@ const ZerolossBinance = () => {
                   height: "70px",
                 }}
               >
-                <span className="btn__text d-flex justify-content-between">
-                  How to add to wallet? GO! 
-                  <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-                  <i class="fas fa-arrow-right"></i>
-                  {/* <i className="icon icon-arrow-right font-size--20"></i> */}
-                </span>
+                <a href="https://bscscan.com/token/0x05d8762946fa7620b263e1e77003927addf5f7e6">
+                  <span className="btn__text d-flex justify-content-between">
+                    TOKEN EXPLORER
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
+                    <i class="fas fa-arrow-right"></i>
+                    {/* <i className="icon icon-arrow-right font-size--20"></i> */}
+                  </span>
+                </a>
               </button>
             </div>
           </div>

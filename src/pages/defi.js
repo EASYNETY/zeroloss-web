@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/footer';
 import NavBar from '../components/nav-bar';
 
 
@@ -14,8 +15,6 @@ function Defi(props) {
         >
           <main className="main">
             <NavBar />
-            <br />
-            <br />
             <section
               className="space h-min-100vh d-flex align-items-center"
               style={{ backgroundColor: "black" }}
@@ -96,8 +95,8 @@ function Defi(props) {
                 </div>
               </div>
             </section>
-
-            <section
+<Footer />
+            {/* <section
               className=" space--top"
               style={{ backgroundColor: "dimgray" }}
             >
@@ -196,7 +195,7 @@ function Defi(props) {
                   </div>
                 </div>
               </footer>
-            </section>
+            </section> */}
           </main>
 
           <script src="js/plugins.min.js"></script>

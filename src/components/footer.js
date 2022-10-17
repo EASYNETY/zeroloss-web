@@ -7,7 +7,7 @@ import { faTwitter, faReddit } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(props) {
   return (
-    <section className=" space--top" style={{ backgroundColor: "black" }}>
+    <section className=" space--top" style={{ backgroundColor: "black" }} id="footer">
       <footer className="section--dark footer footer--v1 position-relative">
         <div className="container text-center">
           <div className="row">
@@ -104,14 +104,20 @@ function Footer(props) {
                 <p className="mb-1">
                   For all marketing and advertising, please contact our
                   Marketing team
-                  <a className="mb-2 mb-lg-1" href="mailto:info@zeroloss.org">
-                    marketing@zeroloss.org
+                  <a
+                    className="mb-2 mb-lg-1"
+                    href="mailto:info@zeroloss.finance"
+                  >
+                    marketing@zeroloss.finance
                   </a>
                 </p>
                 <p className="mb-1">
                   For general inquiries, please contact
-                  <a className="mb-2 mb-lg-1" href="mailto:info@zeroloss.org">
-                    info@zeroloss.org
+                  <a
+                    className="mb-2 mb-lg-1"
+                    href="mailto:info@zeroloss.finance"
+                  >
+                    info@zeroloss.finance
                   </a>
                 </p>
               </div>

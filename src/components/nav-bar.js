@@ -46,7 +46,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/idolaunchpad"
+                to="/defi"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -54,17 +54,17 @@ function NavBar() {
                 Launch App
               </NavLink>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <NavLink
                 exact
-                to="/zerolosspad"
+                to="/idolaunchpad"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
                 ZerolossPad
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <a
                 className="nav-link"

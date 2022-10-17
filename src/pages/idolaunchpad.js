@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/footer';
 import NavBar from '../components/nav-bar';
 
 const Idolaunchpad = () => {
@@ -15,12 +16,6 @@ const Idolaunchpad = () => {
 
         <main className="main">
          <NavBar />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <section className="space bg-color--primary">
             <div className="container">
               <div className="row flex-column-reverse flex-lg-row-reverse align-items-center text-center">
@@ -186,8 +181,8 @@ const Idolaunchpad = () => {
               <p className="mb-0 text-left color--green"></p>
             </div>
           </form>
-
-          <section className="bg-color--primary space--top">
+    <Footer />
+          {/* <section className="bg-color--primary space--top">
             <footer className="section--dark footer footer--v1 position-relative">
               <div className="container text-center">
                 <div className="row">
@@ -280,7 +275,7 @@ const Idolaunchpad = () => {
                 </div>
               </div>
             </footer>
-          </section>
+          </section> */}
         </main>
       </body>
     </>

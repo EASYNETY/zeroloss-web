@@ -5,9 +5,7 @@ import NavBar from '../components/nav-bar';
 function Faq(props) {
     return (
     <>       
-    <NavBar />
-     <br/><br/>
-    
+    <NavBar />  
 <section className="space--top pb-1 team team--v1" id="team" style={{ backgroundColor: "black"}}>
         <div className="pb-1">
             <div className="container">
@@ -61,7 +59,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Contact Us</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse2" className="collapse" data-parent="#accordion1">
+                                <div id="collapse2" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">
                                             Join our <a href="https://t.me/+ea-5HwPvFRcyM2Q0" target="_blank" style={{color: "gold"}}>Telegram group</a> (ENG)<br />
@@ -80,7 +78,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Light Paper</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse3" className="collapse" data-parent="#accordion1">
+                                <div id="collapse3" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">ZEROLOSS Light Paper<br/><br/>
                                             PMM Algorithm is the core interoperability model of ZEROLOSS!<br /> 
@@ -103,7 +101,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Exchange listing, CEX and DEX </span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse4" className="collapse" data-parent="#accordion1">
+                                <div id="collapse4" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">ZLT will be listed at TOP exchanges soon. check our website or at <a href="#" target="_blank" style={{color: "gold"}}>CMC</a>, <a href="#" target="_blank" style={{color: "gold"}}>COINLIST</a> or <a href="#" target="_blank" style={{color: "gold"}}>CoinGecko</a></p>
                                     </div>
@@ -115,7 +113,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Smart Contract Address</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse5" className="collapse" data-parent="#accordion1">
+                                <div id="collapse5" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark"><b>Binance Smart Chain:</b> Click <a href="https://bscscan.com/token/" target="_blank" style={{color: "gold"}}>here</a></p>
                                         <p className="text-dark"><b>Polygon Network Soon</b> </p>
@@ -129,7 +127,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Bridge</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse6" className="collapse" data-parent="#accordion1">
+                                <div id="collapse6" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">ZEROLOSS Blockchain Cross-Chain Bridge coming soon</p>
                                         
@@ -151,7 +149,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">How To Buy</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse7" className="collapse" data-parent="#accordion1">
+                                <div id="collapse7" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">
                                         If you are new to Crypto and DeFi, here's a guide on how to connect to Binance Smart Chain with Metamask or Trustwallet <br/><br/> 
@@ -205,7 +203,7 @@ function Faq(props) {
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
                                 
-                                <div id="collapse8" className="collapse" data-parent="#accordion1">
+                                <div id="collapse8" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark">Personal wallets are used to store PROFIT (outside of exchanges) and to trade at decentralised exchanges.<br />
                                             Such wallets are <a href="https://metamask.io/" target="_blank">MetaMask</a>, <a href="https://trustwallet.com/" target="_blank">Trust Wallet</a>, 
@@ -220,7 +218,7 @@ function Faq(props) {
                                     <span className="font-size--18 text-color--700 font-w--500">Trading on centralised exchanges</span>
                                     <i className="icon icon-up-arrow"></i>
                                 </button>
-                                <div id="collapse9" className="collapse" data-parent="#accordion1">
+                                <div id="collapse9" className="collapse show" data-parent="#accordion1">
                                     <div className="card-body bg-white pl-3">
                                         <p className="text-dark"><b>How to buy/trade PROFIT</b><br />
                                             If you already own crypto’s, you can skip step 1.<br />
