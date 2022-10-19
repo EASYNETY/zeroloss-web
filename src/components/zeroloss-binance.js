@@ -78,7 +78,7 @@ const ZerolossBinance = () => {
           <br />
           <br />
           <div className="container">
-            <a
+            {/* <a
               href="0x05d8762946fa7620b263e1e77003927addf5f7e6"
               className="mb-1 pb-2 px-lg-6"
               style={{
@@ -88,7 +88,7 @@ const ZerolossBinance = () => {
               }}
             >
               CONTRACT ADDRESS
-            </a>
+            </a> */}
             <div className="row">
               <div className="col-12 col-lg-10 mx-auto text-center reveal">
                 <p
