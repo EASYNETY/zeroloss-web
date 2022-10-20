@@ -12,10 +12,8 @@ const Idolaunchpad = () => {
         data-animation="true"
         data-appearance="light"
       >
-       
-
         <main className="main">
-         <NavBar />
+          <NavBar />
           <section className="space bg-color--primary">
             <div className="container">
               <div className="row flex-column-reverse flex-lg-row-reverse align-items-center text-center">
@@ -33,16 +31,11 @@ const Idolaunchpad = () => {
                     <br /> Hold 2000 ZLT to get whitelisted for IDO's
                   </p>
                   <a
-                    data-fancybox="preorder"
-                    data-src="#preorder"
-                    href="javascript:;"
-                    className="btn btn-bg--cta--yellow btn-hover--3d"
+                    href="https://app.dodoex.io/?outputCurrency=0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2&from=ZLT&to=BUSD"
+                    className="btn btn-size--sm btn-border btn-hover--splash"
+                    style={{ color: "gold" }}
                   >
-                    <span className="btn__text">
-                      {" "}
-                      <i className="fa fa-shopping-basket pr-1"></i> buy ZLT for
-                      IDO
-                    </span>
+                    <span className="btn__text font-w--700">Buy ZLT</span>
                   </a>
                 </div>
 
@@ -181,7 +174,7 @@ const Idolaunchpad = () => {
               <p className="mb-0 text-left color--green"></p>
             </div>
           </form>
-    <Footer />
+          <Footer />
           {/* <section className="bg-color--primary space--top">
             <footer className="section--dark footer footer--v1 position-relative">
               <div className="container text-center">
