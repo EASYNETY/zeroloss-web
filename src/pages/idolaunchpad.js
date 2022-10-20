@@ -35,7 +35,9 @@ const Idolaunchpad = () => {
                     className="btn btn-size--sm btn-border btn-hover--splash"
                     style={{ color: "gold" }}
                   >
-                    <span className="btn__text font-w--700">Buy ZLT</span>
+                    <span className="btn__text font-w--700">
+                      buy ZLT for IDO
+                    </span>
                   </a>
                 </div>
 
