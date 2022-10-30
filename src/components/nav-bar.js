@@ -97,7 +97,8 @@ function NavBar() {
           </ul>
           <div className="mr-5 mr-lg-0 ml-lg-2">
             <a
-              href="https://www.dextools.io/app/bnb/pair-explorer/0xcdee9978ac7549c755b58849ed7e1648efac6ca7"
+            href="#"
+              // href="https://www.dextools.io/app/bnb/pair-explorer/0xcdee9978ac7549c755b58849ed7e1648efac6ca7"
               className="btn btn-size--sm btn-border btn-hover--danger color--white"
             >
               <span className="btn__text font-w--500">Buy</span>
